@@ -6,8 +6,9 @@ export default function FetchData() {
     const [api, setApi] = useState([])
     //juz, page, sura, sura_name, aye, text
 
+   
     useEffect(() => {
-        axios.get('/api/get_pack/1/1')
+        axios.get('/api/get_pack/1')
         .then(res => setApi(res.data.pack))
     }, [])
 
